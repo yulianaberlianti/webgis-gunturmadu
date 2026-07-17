@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Peta Digital Fasilitas Umum Desa Gunturmadu</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Marker Cluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- Routing -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <button id="menuToggle" class="menu-toggle">☰</button>
+
+    <div class="hd-left">
+
+      <div class="logo-group">
+        <img src="img/logo-kkn.png" alt="Logo KKN 84.408" class="logo-img">
+        <img src="img/logo-upn.png" alt="Logo UPN" class="logo-img">
+      </div>
+
+      <div>
+        <div class="hd-title">
+          Peta Digital Fasilitas Umum Desa Gunturmadu
+        </div>
+
+        <div class="hd-sub">
+          KKN 84.408 UPN "Veteran" Yogyakarta · Kec. Mojotengah · Kab. Wonosobo
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hd-right">
+
+      <span id="totalBadge" class="badge-total">
+        Memuat...
+      </span>
+
+      <button class="btn-lokasi" id="btnLokasi" title="Temukan lokasi saya">
+        📍 Lokasi Saya
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- LAYOUT -->
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+      <!-- INFORMASI DESA -->
+
+      <div class="card card-desa">
+
+        <div class="desa-info">
+
+          <div class="desa-icon">🌾</div>
+
+          <div>
+
+            <div class="desa-name">
+              Desa Gunturmadu
+            </div>
+
+            <div class="desa-desc">
+              WebGIS ini dikembangkan untuk membantu masyarakat menemukan lokasi fasilitas umum di Desa Gunturmadu secara cepat, mudah, dan interaktif.
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="foto-slot">
+          <img
+            id="fotoDesa"
+            src="img/desa-gunturmadu.jpg"
+            alt="Desa Gunturmadu">
+        </div>
+
+      </div>
+
+      <!-- FILTER -->
+
+      <div class="card">
+
+        <div class="card-title">
+          Filter Fasilitas
+        </div>
+
+        <div id="filterButtons" class="filter-group"></div>
+
+      </div>
+
+      <!-- STATISTIK -->
+
+      <div class="card">
+
+        <div class="card-title">
+          Jumlah per Kategori
+        </div>
+
+        <div id="statsGrid" class="stats-grid"></div>
+
+      </div>
+
+      <!-- DAFTAR FASILITAS -->
+
+      <div class="card card-list">
+
+        <div class="card-title">
+          Daftar Fasilitas
+          <span id="listCount" class="count-tag">18</span>
+        </div>
+
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Cari nama fasilitas...">
+
+        <ul id="fasumList" class="fasum-list"></ul>
+
+      </div>
+
+      <!-- PENYUSUN -->
+
+      <div class="card author-card">
+
+        <div class="card-title">
+          Penyusun
+        </div>
+
+        <div class="author-name">
+          Yuliana Berlianti
+        </div>
+
+        <div class="author-info">
+          Program Studi Teknik Geomatika<br>
+          KKN 84.408 UPN "Veteran" Yogyakarta
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- MAP -->
+
+    <div class="map-wrap">
+
+      <div id="map"></div>
+
+      <!-- PANEL RUTE -->
+
+      <div id="rutePanel" class="rute-panel hidden">
+
+        <div class="rute-header">
+
+          <span>
+            🧭 Rute ke:
+            <strong id="ruteTujuan">–</strong>
+          </span>
+
+          <button id="ruteClose">
+            ✕ Tutup
+          </button>
+
+        </div>
+
+        <div id="ruteInfo" class="rute-info"></div>
+
+      </div>
+
+      <!-- TAMPILAN PETA -->
+
+      <div class="layer-toggle" id="layerToggle">
+
+        <div class="layer-title">
+          Tampilan Peta
+        </div>
+
+        <label>
+          <input type="radio" name="basemap" value="light" checked>
+          Peta Terang
+        </label>
+
+        <label>
+          <input type="radio" name="basemap" value="osm">
+          OpenStreetMap
+        </label>
+
+        <label>
+          <input type="radio" name="basemap" value="satellite">
+          Satelit
+        </label>
+
+        <label>
+          <input type="radio" name="basemap" value="hybrid">
+          Satelit + Label
+        </label>
+
+        <hr>
+
+        <label>
+          <input type="checkbox" id="toggleJalan" checked>
+          Tampilkan Jalan
+        </label>
+
+        <label>
+          <input type="checkbox" id="toggleBatas" checked>
+          Tampilkan Batas Desa
+        </label>
+
+      </div>
+
+      <button class="btn-layer-toggle" id="btnLayerToggle">
+        🗺 Peta
+      </button>
+
+      <!-- LEGENDA -->
+
+      <div class="legend-box">
+
+        <div><span class="lg agama"></span> Keagamaan</div>
+        <div><span class="lg pendidikan"></span> Pendidikan</div>
+        <div><span class="lg pemerintah"></span> Pemerintahan</div>
+        <div><span class="lg olahraga"></span> Olahraga</div>
+        <div><span class="lg sejarah"></span> Sejarah dan Budaya</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- POPUP DETAIL -->
+
+  <div id="detailPopup" class="detail-popup hidden">
+
+    <button class="popup-close" id="popupClose">
+      ✕
+    </button>
+
+    <div class="popup-scroll">
+
+      <div id="popupFoto" class="popup-foto-wrap empty">
+        📷 Foto belum tersedia
+      </div>
+
+      <div id="popupContent"></div>
+
+    </div>
+
+    <div class="popup-actions">
+
+      <button class="btn-action btn-rute" id="btnRute">
+        🧭 Tunjukkan Rute
+      </button>
+
+      <button class="btn-action btn-share" id="btnShare">
+        📤 Bagikan
+      </button>
+
+      <button class="btn-action btn-copy" id="btnCopy">
+        📋 Salin Koordinat
+      </button>
+
+    </div>
+
+
+  </div>
+
+  <!-- LIGHTBOX FOTO -->
+
+  <div id="lightbox" class="lightbox hidden">
+
+    <div class="lightbox-bg" id="lightboxBg"></div>
+
+    <div class="lightbox-content">
+
+      <button class="lightbox-close" id="lightboxClose">
+        ✕
+      </button>
+
+      <img id="lightboxImg" src="" alt="Foto fasilitas">
+
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    © 2026 KKN 84.408 UPN "Veteran" Yogyakarta
+
+    <span class="footer-divider">•</span>
+
+    Data: Survei Lapangan &amp; GPS Warga
+
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
