@@ -281,7 +281,7 @@ const FASUM_GEOJSON = {
         "nama": "Lapangan Voli Dusun Ngaglik",
         "kategori": "Olahraga",
         "status": "Terverifikasi",
-        "foto": "img/fasum/Lapangan Voli Dusun Ngaglik.jpg",
+        "foto": "img/fasum/Lapangan Voli Dusun Ngaglik.jpeg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
