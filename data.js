@@ -333,8 +333,8 @@ const FASUM_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          109.872794,
-          -7.330275
+          109.863817,
+          -7.324944
         ]
       }
     },
