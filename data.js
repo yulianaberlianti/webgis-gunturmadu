@@ -320,6 +320,28 @@ const FASUM_GEOJSON = {
       "type": "Feature",
       "properties": {
         "no": 19,
+        "nama": "Lapangan Voli Dusun Ngaglik",
+        "kategori": "Olahraga",
+        "status": "Telah terverifikasi",
+        "foto": "img/fasum/Lapangan Voli Dusun Ngaglik.jpg",
+        "alamat": "",
+        "jam": "",
+        "deskripsi": "",
+        "sumber": "Survei Lapangan KKN 84.408",
+        "update": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.872794,
+          -7.330275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "no": 20,
         "nama": "Mushola Al Ikhlas",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
