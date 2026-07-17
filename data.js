@@ -11,14 +11,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 2,
+        "no": 1,
         "nama": "Mushola At-Taqwa",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Mushola At-Taqwa.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -33,14 +30,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 3,
+        "no": 2,
         "nama": "Masjid Al-Hidayah Plumbungan",
         "kategori": "Keagamaan",
         "status": "Belum verifikasi",
         "foto": "img/fasum/Masjid Al-Hidayah Plumbungan.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -55,14 +49,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 4,
+        "no": 3,
         "nama": "Masjid An-Nur",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Masjid An-Nur.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -77,14 +68,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 5,
+        "no": 4,
         "nama": "Mushola Al Falah",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Mushola Al Falah.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -99,14 +87,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 7,
+        "no": 5,
         "nama": "Masjid Nurul Iman",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Masjid Nurul Iman.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -121,14 +106,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 8,
+        "no": 6,
         "nama": "Masjid Syaikh Umar Sutodrono",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Masjid Syaikh Umar Sutodrono.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -143,14 +125,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 10,
+        "no": 7,
         "nama": "Masjid Baiturrahman",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Masjid Baiturrahman.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -165,14 +144,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 11,
+        "no": 8,
         "nama": "Makam Syaikh Umar Sutodrono",
         "kategori": "Sejarah dan Budaya",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Makam Syaikh Umar Sutodrono.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -187,14 +163,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 12,
+        "no": 9,
         "nama": "Lapangan Bola",
         "kategori": "Olahraga",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Lapangan Bola.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -209,14 +182,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 13,
+        "no": 10,
         "nama": "TK Pertiwi Gunturmadu",
         "kategori": "Pendidikan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/TK Pertiwi Gunturmadu.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -231,14 +201,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 14,
+        "no": 11,
         "nama": "SDN Gunturmadu",
         "kategori": "Pendidikan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/SDN Gunturmadu.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -253,14 +220,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 15,
+        "no": 12,
         "nama": "Kantor Desa Gunturmadu",
         "kategori": "Pemerintahan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Kantor_desa.jpeg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -275,14 +239,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 16,
+        "no": 13,
         "nama": "Lapangan Bola Plumbungan",
         "kategori": "Olahraga",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Lapangan Bola Plumbungan.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -297,14 +258,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 18,
+        "no": 14,
         "nama": "Lapangan Voli Dusun Tugu",
         "kategori": "Olahraga",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Lapangan Voli Dusun Tugu.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -319,14 +277,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 19,
+        "no": 15,
         "nama": "Lapangan Voli Dusun Ngaglik",
         "kategori": "Olahraga",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Lapangan Voli Dusun Ngaglik.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
@@ -341,14 +296,11 @@ const FASUM_GEOJSON = {
     {
       "type": "Feature",
       "properties": {
-        "no": 20,
+        "no": 15,
         "nama": "Mushola Al Ikhlas",
         "kategori": "Keagamaan",
         "status": "Telah terverifikasi",
         "foto": "img/fasum/Mushola Al Ikhlas.jpg",
-        "alamat": "",
-        "jam": "",
-        "deskripsi": "",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
       },
