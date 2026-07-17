@@ -14,7 +14,7 @@ const FASUM_GEOJSON = {
         "no": 1,
         "nama": "Mushola At-Taqwa",
         "kategori": "Keagamaan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Mushola At-Taqwa.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -33,7 +33,7 @@ const FASUM_GEOJSON = {
         "no": 2,
         "nama": "Masjid Al-Hidayah Plumbungan",
         "kategori": "Keagamaan",
-        "status": "Belum verifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Masjid Al-Hidayah Plumbungan.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -52,7 +52,7 @@ const FASUM_GEOJSON = {
         "no": 3,
         "nama": "Masjid An-Nur",
         "kategori": "Keagamaan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Masjid An-Nur.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -71,7 +71,7 @@ const FASUM_GEOJSON = {
         "no": 4,
         "nama": "Mushola Al Falah",
         "kategori": "Keagamaan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Mushola Al Falah.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -90,7 +90,7 @@ const FASUM_GEOJSON = {
         "no": 5,
         "nama": "Masjid Nurul Iman",
         "kategori": "Keagamaan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Masjid Nurul Iman.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -109,7 +109,7 @@ const FASUM_GEOJSON = {
         "no": 6,
         "nama": "Masjid Syaikh Umar Sutodrono",
         "kategori": "Keagamaan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Masjid Syaikh Umar Sutodrono.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -128,7 +128,7 @@ const FASUM_GEOJSON = {
         "no": 7,
         "nama": "Masjid Baiturrahman",
         "kategori": "Keagamaan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Masjid Baiturrahman.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -147,7 +147,7 @@ const FASUM_GEOJSON = {
         "no": 8,
         "nama": "Makam Syaikh Umar Sutodrono",
         "kategori": "Sejarah dan Budaya",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Makam Syaikh Umar Sutodrono.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -166,7 +166,7 @@ const FASUM_GEOJSON = {
         "no": 9,
         "nama": "Lapangan Bola",
         "kategori": "Olahraga",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Lapangan Bola.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -185,7 +185,7 @@ const FASUM_GEOJSON = {
         "no": 10,
         "nama": "TK Pertiwi Gunturmadu",
         "kategori": "Pendidikan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/TK Pertiwi Gunturmadu.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -204,7 +204,7 @@ const FASUM_GEOJSON = {
         "no": 11,
         "nama": "SDN Gunturmadu",
         "kategori": "Pendidikan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/SDN Gunturmadu.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -223,7 +223,7 @@ const FASUM_GEOJSON = {
         "no": 12,
         "nama": "Kantor Desa Gunturmadu",
         "kategori": "Pemerintahan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Kantor_desa.jpeg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -242,7 +242,7 @@ const FASUM_GEOJSON = {
         "no": 13,
         "nama": "Lapangan Bola Plumbungan",
         "kategori": "Olahraga",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Lapangan Bola Plumbungan.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -261,7 +261,7 @@ const FASUM_GEOJSON = {
         "no": 14,
         "nama": "Lapangan Voli Dusun Tugu",
         "kategori": "Olahraga",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Lapangan Voli Dusun Tugu.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -280,7 +280,7 @@ const FASUM_GEOJSON = {
         "no": 15,
         "nama": "Lapangan Voli Dusun Ngaglik",
         "kategori": "Olahraga",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Lapangan Voli Dusun Ngaglik.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
@@ -299,7 +299,7 @@ const FASUM_GEOJSON = {
         "no": 15,
         "nama": "Mushola Al Ikhlas",
         "kategori": "Keagamaan",
-        "status": "Telah terverifikasi",
+        "status": "Terverifikasi",
         "foto": "img/fasum/Mushola Al Ikhlas.jpg",
         "sumber": "Survei Lapangan KKN 84.408",
         "update": ""
